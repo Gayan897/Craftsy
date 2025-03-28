@@ -1,13 +1,9 @@
-
 name: Cross-Platform Build
-
 on:
   push:
-    branches:
-      - main
     tags:
-      - 'v1.1*'  # Triggers on any tag push
-
+      - 'v*'
+      types: [review_requested]
 jobs:
   build_on_windows:
     runs-on: windows-latest
@@ -19,7 +15,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.npm
-          key: windows-node-${{ hashFiles('/pubspec.lock') }}
+          key: windows-node-${{ hashFiles('pubspeck.lock') }}
           restore-keys: |
             windows-node-
       - name: Setup Node.js
@@ -28,76 +24,30 @@ jobs:
           node-version: '20'
 
       - name: Install Dependencies
-        run: npm install --prefer-offline --legacy-peer-deps || exit 0  # Error handling
-
-      - name: Build the Package
-        run: npm run package
-
-      - name: Upload Windows Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: windows-installer-ia32-setup
-          path: release/build/LibreLinkUpDesktop-0.1.13-ia32-setup.exe # Adjust the path based on actual output
-          overwrite: true
-
-  build_on_ubuntu:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Cache Node.js dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ubuntu-node-${{ hashFiles('/pubspec.lock') }}
-          restore-keys: |
-            ubuntu-node-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install Dependencies
         run: npm install --prefer-offline --legacy-peer-deps
 
-      - name: Build the Package
+      - name: Build
         run: npm run package
 
-      - name: Upload Ubuntu Artifact
-        uses: actions/upload-artifact@v4
+      - name: List release folder
+        run: dir release/build/
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        id: create_release
         with:
-          name: ubuntu-installer-appimage
-          path: release/build/**
-          overwrite: true
+          name: ${{ github.ref_name }}
+          tag_name: ${{ github.ref_name }}
+          draft: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  build_on_mac:
-    runs-on: macOS-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Cache Node.js dependencies
-        uses: actions/cache@v4
+      - name: Upload Release Artifacts
+        uses: softprops/action-gh-release@v1
         with:
-          path: ~/.npm
-          key: mac-node-${{ hashFiles('/pubspec.lock') }}
-          restore-keys: |
-            mac-node-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install Dependencies
-        run: npm install --prefer-offline --legacy-peer-deps
-
-      - name: Build the Package
-        run: npm run package
-
-      - name: Upload macOS Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: mac-installer-x64
-          path: release/build/**
-          overwrite: true
+          files: |
+            release/build/*.exe
+            release/build/*.msi
+            release/build/*.appx
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
