@@ -3,7 +3,6 @@ on:
   push:
     tags:
       - 'v*'
-      types: [review_requested]
 jobs:
   build_on_windows:
     runs-on: windows-latest
