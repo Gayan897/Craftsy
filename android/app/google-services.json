@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "788327469634",
+    "project_id": "craftsy-32f6a",
+    "storage_bucket": "craftsy-32f6a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788327469634:android:03df67a7a9be9189b1d3db",
+        "android_client_info": {
+          "package_name": "com.example.craftsy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQA2yrZ4yl08-WOlkgMaNsZvGmerLGgR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
