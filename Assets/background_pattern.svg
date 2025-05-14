@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#f8f9fa"/>
+  
+  <!-- Pattern Elements -->
+  <g opacity="0.1">
+    <!-- Chat Bubbles Pattern -->
+    <g transform="translate(20, 20)">
+      <path d="M30,0 Q40,0 40,10 L40,30 Q40,40 30,40 L15,40 L10,50 L5,40 L10,40 Q0,40 0,30 L0,10 Q0,0 10,0 Z" fill="#333"/>
+    </g>
+    
+    <g transform="translate(100, 60)">
+      <path d="M0,10 Q0,0 10,0 L30,0 Q40,0 40,10 L40,30 Q40,40 30,40 L10,40 Q0,40 0,30 Z" fill="#333"/>
+    </g>
+    
+    <g transform="translate(180, 30)">
+      <path d="M30,0 Q40,0 40,10 L40,30 Q40,40 30,40 L15,40 L10,50 L5,40 L10,40 Q0,40 0,30 L0,10 Q0,0 10,0 Z" fill="#333"/>
+    </g>
+    
+    <g transform="translate(260, 70)">
+      <path d="M0,10 Q0,0 10,0 L30,0 Q40,0 40,10 L40,30 Q40,40 30,40 L10,40 Q0,40 0,30 Z" fill="#333"/>
+    </g>
+    
+    <g transform="translate(340, 20)">
+      <path d="M30,0 Q40,0 40,10 L40,30 Q40,40 30,40 L15,40 L10,50 L5,40 L10,40 Q0,40 0,30 L0,10 Q0,0 10,0 Z" fill="#333"/>
+    </g>
+    
+    <!-- Second row -->
+    <g transform="translate(50, 120)">
+      <path d="M0,10 Q0,0 10,0 L30,0 Q40,0 40,10 L40,30 Q40,40 30,40 L10,40 Q0,40 0,30 Z" fill="#333"/>
+    </g>
+    
+    <g transform="translate(150, 150)">
+      <path d="M30,0 Q40,0 40,10 L40,30 Q40,40 30,40 L15,40 L10,50 L5,40 L10,40 Q0,40 0,30 L0,10 Q0,0 10,0 Z" fill="#333"/>
+    </g>
+    
+    <g transform="translate(230, 130)">
+      <path d="M0,10 Q0,0 10,0 L30,0 Q40,0 40,10 L40,30 Q40,40 30,40 L10,40 Q0,40 0,30 Z" fill="#333"/>
+    </g>
+    
+    <g transform="translate(310, 160)">
+      <path d="M30,0 Q40,0 40,10 L40,30 Q40,40 30,40 L15,40 L10,50 L5,40 L10,40 Q0,40 0,30 L0,10 Q0,0 10,0 Z" fill="#333"/>
+    </g>
+    
+    <!-- Third row -->
+    <g transform="translate(20, 220)">
+      <path d="M30,0 Q40,0 40,10 L40,30 Q40,40 30,40 L15,40 L10,50 L5,40 L10,40 Q0,40 0,30 L0,10 Q0,0 10,0 Z" fill="#333"/>
+    </g>
+    
+    <g transform="translate(100, 250)">
+      <path d="M0,10 Q0,0 10,0 L30,0 Q40,0 40,10 L40,30 Q40,40 30,40 L10,40 Q0,40 0,30 Z" fill="#333"/>
+    </g>
+    
+    <g transform="translate(180, 230)">
+      <path d="M30,0 Q40,0 40,10 L40,30 Q40,40 30,40 L15,40 L10,50 L5,40 L10,40 Q0,40 0,30 L0,10 Q0,0 10,0 Z" fill="#333"/>
+    </g>
+    
+    <g transform="translate(260, 260)">
+      <path d="M0,10 Q0,0 10,0 L30,0 Q40,0 40,10 L40,30 Q40,40 30,40 L10,40 Q0,40 0,30 Z" fill="#333"/>
+    </g>
+    
+    <g transform="translate(340, 220)">
+      <path d="M30,0 Q40,0 40,10 L40,30 Q40,40 30,40 L15,40 L10,50 L5,40 L10,40 Q0,40 0,30 L0,10 Q0,0 10,0 Z" fill="#333"/>
+    </g>
+    
+    <!-- Fourth row -->
+    <g transform="translate(50, 320)">
+      <path d="M0,10 Q0,0 10,0 L30,0 Q40,0 40,10 L40,30 Q40,40 30,40 L10,40 Q0,40 0,30 Z" fill="#333"/>
+    </g>
+    
+    <g transform="translate(150, 350)">
+      <path d="M30,0 Q40,0 40,10 L40,30 Q40,40 30,40 L15,40 L10,50 L5,40 L10,40 Q0,40 0,30 L0,10 Q0,0 10,0 Z" fill="#333"/>
+    </g>
+    
+    <g transform="translate(230, 330)">
+      <path d="M0,10 Q0,0 10,0 L30,0 Q40,0 40,10 L40,30 Q40,40 30,40 L10,40 Q0,40 0,30 Z" fill="#333"/>
+    </g>
+    
+    <g transform="translate(310, 360)">
+      <path d="M30,0 Q40,0 40,10 L40,30 Q40,40 30,40 L15,40 L10,50 L5,40 L10,40 Q0,40 0,30 L0,10 Q0,0 10,0 Z" fill="#333"/>
+    </g>
+    
+    <!-- Craft icons -->  
+    <g transform="translate(80, 90) scale(0.6)">
+      <path d="M10,0 L40,0 L50,10 L50,40 L40,50 L10,50 L0,40 L0,10 Z" fill="#333"/>
+      <path d="M15,15 L35,15 L35,35 L15,35 Z" fill="none" stroke="#f8f9fa" stroke-width="2"/>
+    </g>
+    
+    <g transform="translate(280, 190) scale(0.6)">
+      <circle cx="25" cy="25" r="20" fill="#333"/>
+      <path d="M15,25 Q25,10 35,25 Q25,40 15,25 Z" fill="none" stroke="#f8f9fa" stroke-width="2"/>
+    </g>
+    
+    <g transform="translate(140, 290) scale(0.6)">
+      <path d="M25,5 L45,15 L45,35 L25,45 L5,35 L5,15 Z" fill="#333"/>
+      <circle cx="25" cy="25" r="10" fill="none" stroke="#f8f9fa" stroke-width="2"/>
+    </g>
+    
+    <g transform="translate(350, 90) scale(0.6)">
+      <rect x="10" y="10" width="30" height="30" rx="5" ry="5" fill="#333"/>
+      <path d="M15,25 L35,25 M25,15 L25,35" stroke="#f8f9fa" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
